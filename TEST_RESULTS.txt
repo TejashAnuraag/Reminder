@@ -1,0 +1,18 @@
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 772, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/connection.py", line 37, in get_or_create_client
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/daemon.py", line 124, in start_daemon
+TimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.
+test_reminders_can_be_saved_and_loaded (test_storage.StorageTests.test_reminders_can_be_saved_and_loaded) ... ok
+test_empty_task_is_rejected (test_validation.ValidationTests.test_empty_task_is_rejected) ... ok
+test_invalid_date_and_time (test_validation.ValidationTests.test_invalid_date_and_time) ... ok
+test_task_is_trimmed (test_validation.ValidationTests.test_task_is_trimmed) ... ok
+test_valid_date_and_time (test_validation.ValidationTests.test_valid_date_and_time) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
